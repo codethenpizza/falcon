@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Falcon</title>
+</head>
+<body>
+    <h1 f-text="title"></h1>
+    <h2>Title length <span f-text="titleLength"></span></h2>
+    <label for="title">Title: </label>
+    <input
+       type="text"
+       id="title"
+       placeholder="Put here your title"
+       f-model="title"
+       oninput="updateText('title', event)"
+    >
+    <hr>
+    <button type="button" onclick="logApp()">Log App</button>
+
+    <script type="module" src="falcon.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
